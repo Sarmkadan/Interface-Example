@@ -4,17 +4,17 @@ using System.Text;
 
 namespace InterfaceExample
 {
-    class BigCar : ICar
+    public class  BigCar : ICar
     {
-        double ICar.Speed => 120; //km hr
-        double ICar.Weight => 5000;
-        double ICar.GasolinUsing => 0.7;
-        double ICar.WeightMove => 1500;
-        string ICar.TypeOfCar => "Грузовая";
-        double ICar.HowmuchGasolinWeightCanHold => 150;
-        void ICar.Move(ICar car)
+       public double Speed => 120; //km hr
+       public double Weight => 5000;
+       public double GasolinUsing => 0.7;
+       public double WeightMove => 1500;
+       public string TypeOfCar => "Грузовая";
+       public double HowmuchGasolinWeightCanHold => 150;
+       public  void Move()
         {
-           Console.WriteLine(car.TypeOfCar  + " проедет  "  + car.HowmuchGasolinWeightCanHold / car.GasolinUsing + " KM "  + " может переместить " + car.WeightMove +  " при этом вес машины " + car.Weight);
+           Console.WriteLine(TypeOfCar + " проедет  "  + HowmuchGasolinWeightCanHold / GasolinUsing + " KM "  + " может переместить " + WeightMove +  " при этом вес машины " + Weight);
         }
     }
 }

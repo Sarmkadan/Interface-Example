@@ -14,7 +14,7 @@ namespace InterfaceExample
             cars.Add(new FastCar());
             foreach (ICar car in cars)
             {
-                car.Move(car);
+                car.Move();
             }
             //Console.WriteLine("Hello World!");
             Console.ReadLine();

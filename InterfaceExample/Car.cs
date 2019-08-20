@@ -4,7 +4,7 @@ using System.Text;
 
 namespace InterfaceExample
 {
-    interface ICar
+    public interface ICar
     {
         double Speed { get; }
         double Weight { get; }
@@ -12,6 +12,6 @@ namespace InterfaceExample
         double WeightMove { get; }
         string TypeOfCar { get; }
         double HowmuchGasolinWeightCanHold { get; }
-        void Move(ICar car);
+        void Move();
     }
 }
